@@ -22,8 +22,6 @@ As a bonus, the user should also have the option to click a button to copy the p
 Your application should have a clean and polished user interface and be responsive, 
 ensuring that it adapts to multiple screen sizes. -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,23 +29,95 @@ ensuring that it adapts to multiple screen sizes. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+
+    <style>
+        body {
+            background-color: #f0f0f3;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            margin: 30px 0 60px 0;
+            font-size: 40px;
+            color: rgb(76, 71, 92);            
+        }
+        .container {
+            width: 800px;
+            height: 500px;
+            color: rgb(113, 113, 114);
+            background-color: white;
+            border: 1px solid rgb(247, 247, 253);
+            box-shadow: 2px 1px 3px 3px rgba(204, 204, 209, 0.15);           
+            margin: 0 auto;
+            border-radius: 10px;    
+        }
+        h2 {
+            font-size: 34px;
+            color: rgb(76, 71, 92);
+            margin: 50px 0 23px 70px;
+            padding-bottom: 0px;
+            
+        }
+        .bigbox{
+            width: 650px;
+            height: 350px;
+            margin: 0 auto;
+        }
+        .passwordbox {
+            width: 650px;
+            height: 250px;
+            border: 2px solid rgb(244, 244, 247);
+            margin-top:0px;
+            margin: 0 auto;            
+        }
+        #password {
+            width : 500px;
+            height: 150px;
+            margin: 45px 50px 20px 70px;
+            border: 2px dotted rgb(230, 230, 231);
+        }
+        #generate {
+            width : 280px;
+            height: 60px;
+            background-color: rgb(192, 3, 3);
+            font-size: 23px;
+            color: white;
+            margin-top:15px;
+            float: left;
+            border-radius : 30px;
+        }
+        #copy {
+            width : 280px;
+            height: 60px;
+            background-color: rgb(197, 196, 202);
+            font-size: 23px;
+            color :white;
+            margin-top:15px;
+            float: right;
+            border-radius: 30px;
+        }
+
+    </style>
+
   </head>
   <body>
     <div id="main">  
       <h1>Password Generator</h1>   
     
       <div class="container">         
-        <h2></h2>                      <!-- children[0] -->
-         
-        <textarea id="password"
-          placeholder="Your Secure Password"   
-          aria-label="Generated Password" >    <!-- children[1] -->
-        </textarea>
-        
-        <button id="generate">Generate Password</button>   <!-- children[2] -->
-        <button id="copy">Copy to Clipboard</button>     <!-- children[3] -->
-         
+        <h2>Generate Password</h2>  
+        <div class = "bigbox">        
 
+            <div class = "passwordbox">
+            <textarea id="password"
+              placeholder="Your Secure Password"   
+              aria-label="Generated Password" >    <!-- children[1] -->
+            </textarea>        
+            </div>
+            <button id="generate">Generate Password</button>   <!-- children[2] -->
+            <button id="copy">Copy to Clipboard</button>     <!-- children[3] -->
+         
+        </div>  
       </div>
     </div>
 

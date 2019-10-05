@@ -1,29 +1,17 @@
-/* var main = document.querySelector("#main");
-var titleH1 = document.querySelector("h1");
-var boundary = document.querySelector(".container");
-var titleH2 = document.querySelector("h2");
-var passwordBox = document.querySelector("#password");
-var passwordGen = document.querySelector("#generate");
-var bonus = document.querySelector("#copy"); */
 
-/* titleH1[0].setAttribute("style", "font-family: 'sans-serif'; font-size: 32px; padding-left: 30px");
-boundary.setAttribute("style", "width:450px; height:250px; color:grey");
-boundary.children[0].textContent = "Generate a Password";
-titleH2[0].setAttribute("Style", "font-family: 'sans-serif'; font-size: 24px; padding-left: 30px");)
-passwordBox.setAttribute("style", "width:200px; height:150px");
-passwordGen.setAttribute("style", "color:red");
-bonus.setAttribute("style", "color:grey"); */
-/* ---------------------------------- */
+
+
+
 var passWordGen = [];
-var randomPass;
+var randomPass = "";
 
-var spe = [];
+var spe = ["~","!","@","#","$","%","^","&","*","(",")","_","+"];
 var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var low = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "z"];
 var upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Z"];
 
 
-function userNum() {
+function userLength() {
     var x;
     var numOK = false;
     while (numOK !== true) {
@@ -31,36 +19,78 @@ function userNum() {
         if (x >= 8 && x <= 128) {
             numOK = true;
             alert("OK. Let's make your password");
-        }
-        else {
+        } else {
             alert("You need to choose between 8 to 128");
         };
         console.log("User selected length: " + x);
     };
     return x;
 }
-/* userNum */
 
-function userCharacter(y) {
-    for (j = 0; j < 1; j++) {
-        var x = prompt("How many types of characters do you want to be included?")
-        if (y => 1 && y <= 4) {
-            alert("Your password is going to have 'y' types");
-        }
-        else {
-            alert("You need to choose at least 1 type of character.");
+function userSpecial() {
+    var s = confirm("Do you want to use special Cahracter?")
+        if (s == true) {
+            alert("You are going to use special character.");
+        } else {
+            alert("You are not goint to use speaicl character.");
         };
-        console.log(userCharacter);
-    };
+        console.log("User use: " + s);
+    return s;
 }
-// userCharacter
 
+function userNumber() {
+    var n = confirm("Do you want to use number?")
+        if (n == true) {
+            alert("You are going to use number.");
+        } else {
+            alert("You are not goint to use number.");
+        };
+        console.log("Usde use: " + n);
+    return n;
+}
+
+function userUpper() {
+    var u = confirm("Do you want to use upper Cahracter?")
+        if (u == true) {
+            alert("You are going to use upper character.");
+        } else {
+            alert("You are not goint to use upper character.");
+        };
+        console.log();
+    return u;
+}
+
+function userLower() {
+    var l = confirm("Do you want to use lower Cahracter?")
+        if (l == true) {
+            alert("You are going to use lower character.");
+        } else {
+            alert("You are not goint to use lowel character.");
+        };
+        console.log();
+    return l;
+}
 
 //make x random numbers
 
 //mix up the arrays of user chose
 
+//------------------------------------------------
+// ask user how many length
+var userLength = userLength();
+var userSpecial = userSpecial();
+var userNumber = userNumber();
+var userUpper = userUpper();
+var userLower = userLower();
 
-// ask user how many chars
-var userChars = userNum();
+while (randomPass.length < userLength) {
 
+    if(userSpecial === true) {
+        random  * 
+    }
+
+
+
+
+
+}
