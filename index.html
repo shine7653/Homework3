@@ -66,15 +66,20 @@ ensuring that it adapts to multiple screen sizes. -->
         .passwordbox {
             width: 650px;
             height: 250px;
-            border: 2px solid rgb(244, 244, 247);
+            border-top: 2px solid rgb(244, 244, 247);
+            border-bottom: 2px solid rgb(244, 244, 247);
+            
             margin-top:0px;
             margin: 0 auto;            
         }
         #password {
-            width : 500px;
-            height: 150px;
-            margin: 45px 50px 20px 70px;
+            font-size: 45px;
+            text-align: center;
+            width : 99%;
+            height: 90%;
+            margin: 10px 2px 10px 2px;
             border: 2px dotted rgb(230, 230, 231);
+            border-radius: 6px;
         }
         #generate {
             width : 280px;
@@ -111,7 +116,7 @@ ensuring that it adapts to multiple screen sizes. -->
             <div class = "passwordbox">
             <textarea id="password"
               placeholder="Your Secure Password"   
-              aria-label="Generated Password" >    <!-- children[1] -->
+              aria-label="Generated Password" >   
             </textarea>        
             </div>
             <button id="generate">Generate Password</button>   <!-- children[2] -->
