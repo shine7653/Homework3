@@ -6,11 +6,12 @@
 
 
 2. Folliwing the questions of what type of characters user is going to use.
-<img src="screenCapture/02confirmKinds" width="50%" height="50%">
+<img src="screenCapture/02confirmKinds.png" width="50%" height="50%">
 
 
 3. Using while loop, among the character types user chose, 
    computer chose each character until it add up to the length the user chose.
+<img src="screenCapture/03passwordGenerate.png" width="50%" height="50%">
    
    
    
